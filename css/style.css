@@ -189,8 +189,8 @@ main {
 }
 
 main.container {
-	background: #fff;
-
+	/* background: #fff; */
+	
 }
 
 .slider {
@@ -198,7 +198,6 @@ main.container {
 	width: 640px;
 	margin: 0 auto;
 	position: relative;
-	
 }
 
 #carouselExampleIndicators {
@@ -237,14 +236,7 @@ footer {                      /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 }
 
-/* footer .container {
-	height: 180px;
-} */
 
-/* .wrapper .footer {
-	height: 180px;
-}
- */
 ul {
 	margin: 0;
 	height: 180px;
