@@ -318,6 +318,10 @@ img {
 	 color: #fff;
  }
 
+ input, textarea {
+	 background: #f8683c;
+ }
+
 /* footer */
 footer {
 	/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
