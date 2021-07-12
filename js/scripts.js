@@ -121,12 +121,12 @@ $(function () {
 		$('.small-image').on('click', 'img', changeimage);
 	}
 
-	if ($('.small-image > img').length) {
+	/* if ($('.small-image > img').length) {
 		$('.small-image > img').each(function () {
 			$(this).css({
 				'margin-top': (160 - $(this).height()) / 2,
 				'margin-left': (160 - $(this).width()) / 2
 			})
 		});
-	}
+	} */
 });
