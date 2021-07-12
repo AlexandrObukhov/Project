@@ -307,8 +307,9 @@ img {
 .small-image img {
 	max-height: 100px;
 	max-width: 160px;
-	margin: 0px 0px 0px 0px;
+	margin-top: 0px;
 }
+
 .description-desk {
 	margin-left: 540px;
 	color:#fff;
@@ -462,14 +463,15 @@ aside {
 }
 
 .cat-unit {
-	height: 100px;
+	height: 70px;
 	width: 100px;
 	background: pink;
 	/* background: url('/images/r1.jpg'); */
+
 }
 
 .cat-blocks img {
-	height: 100px;
+	height: 70px;
 	width: 100px;
 }
 
