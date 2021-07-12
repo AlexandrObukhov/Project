@@ -8,8 +8,8 @@ function seebigimage() {
     // получаем доступные размеры экрана и соотношение сторон картинки
     // -120 пикселей - потому что у нас по стилям отступы от края экрана до попапа по 30 пикселей и поля попапа тоже по 30 пикселей с каждой стороны
     let winsize = {
-        w: document.documentElement.clientWidth - 120,
-        h: document.documentElement.clientHeight - 120
+        w: document.documentElement.clientWidth - 170,
+        h: document.documentElement.clientHeight - 110
     };
     let sides = document.querySelector('.main-image img').clientWidth / document.querySelector('.main-image img').clientHeight;
 
