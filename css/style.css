@@ -5,8 +5,6 @@ html {
 body {
 	margin: 0;
 	font: normal 16px/24px Arial, sans-serif;
-	/* background: url("../images/pattern.jpg") left top repeat; */
-	background: url("../images/river.jpg");
 	min-width: 320px;
 	position: relative;
 	height: 100%;
@@ -21,14 +19,14 @@ p {
 	padding: 16px;
 	display: flex;
 	justify-content: space-between;
-	max-width: 1400px;
+	/* max-width: 1200px; */
 }
 
 .wrapper {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
-	/* min-height: 100vh; */
+	background: url("../images/river.jpg");
 }
 
 .div-popup {
@@ -124,7 +122,10 @@ header {
 	background: #f93c00;
 	height: 78px;
 	max-width: 100%;
-	
+}
+
+.topmenu.container {
+	justify-content: space-around;
 }
 
 #yourcity {
@@ -146,12 +147,10 @@ header {
 	text-decoration: none;
 	padding: 10px;
 	display: block;
-	/* z-index: 2; */
 }
 
 .line-point {
 	color: #fff;
-	/* z-index: 2; */
 }
 
 .pulldown-point {
@@ -175,7 +174,6 @@ header {
 	left: 0;
 	padding: 20px 0 5px;
 	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
-	/* z-index: 1; */ /* <<<<<<==========        !!!!!!!! */
 }
 
 .menupoint:hover > span,
@@ -210,7 +208,6 @@ header {
 .basket {
 	float: right;
 	margin: 30px 0 30px 50px;
-	/* border: 1px solid #000; */
 	line-height: 40px;
 	font-size: 20px;
 	padding: 0;
@@ -236,21 +233,17 @@ header {
 /* main */ /* !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 main {
 	flex: 1 0 auto;
-	/* background: #fff; */
 	display: flex;
 }
 
 main.container {
-	/* background: #fff; */
 	font: normal 16px/24px Arial, sans-serif;
-	/* color: #fff; */
 }
 
 #ct,
 #ord {
 	background: #fff;
 	background: url(../images/bg_ct.jpg);
-	/* opacity: 0.5; */
 }
 
 .slider {
@@ -266,7 +259,6 @@ main.container {
 }
 
 img {
-	/* height: 360px; */
 	width: 480px;
 	margin: 0;
 }
@@ -328,7 +320,6 @@ img {
 /* footer */
 footer {
 	/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-	/* background: #316099; */
 	background: url("../images/grass.png");
 	color: #fff;
 	display: flex;
@@ -379,7 +370,6 @@ li a {
 	width: 20px;
 	display: flex;
 	display: inline;
-	/* padding: 0 5px 0 0; */
 }
 
 .cars img {
@@ -474,8 +464,6 @@ aside {
 	height: 70px;
 	width: 100px;
 	background: pink;
-	/* background: url('/images/r1.jpg'); */
-
 }
 
 .cat-blocks img {
@@ -545,13 +533,17 @@ aside {
 		height: 498px;
 	}	 
 }
-@media (min-width: 340px) {
+@media (min-width: 344px) {
 	.bottomheader {
 		height: 180px;
 	}
-	.topmenu.container, .container {
+	.topmenu.container, footer .container {
 		flex-wrap: wrap;
 	}
+	.container {
+		flex-wrap: nowrap;
+	}
+	
 	.social {
 		flex-wrap: wrap;
 	}
@@ -561,7 +553,7 @@ aside {
 }
 
 
-@media (min-width: 440px) {
+@media (min-width: 450px) {
 	.cat-blocks {
 		gap: 32px;
 	}
@@ -636,7 +628,7 @@ aside {
 		margin: 0;
 	}
 	.bottomheader {
-		height: 78px;
+		height: 120px;
 	}
 	footer {
 		height: 180px;
