@@ -21,6 +21,7 @@ p {
 	padding: 16px;
 	display: flex;
 	justify-content: space-between;
+	max-width: 1400px;
 }
 
 .wrapper {
@@ -121,7 +122,9 @@ header {
 
 .bottomheader {
 	background: #f93c00;
-	/* z-index: 2; */
+	height: 78px;
+	max-width: 100%;
+	
 }
 
 #yourcity {
@@ -136,7 +139,7 @@ header {
 
 .topmenu {
 	text-align: center;
-	/* z-index: 2; */
+	height: 78px;
 }
 
 .topmenu a {
@@ -368,6 +371,7 @@ li a {
 	padding: 20px;
 	justify-content: space-between;
 	padding: 10px 0 10px 0;
+	height: 44px;
 }
 
 .soc__icon img {
@@ -526,6 +530,58 @@ aside {
 }
 
 /* different screens */ /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+@media (min-width: 320px) {
+	.bottomheader {
+		height: 210px;
+	}
+	.topmenu.container, .container {
+		flex-wrap: wrap;
+	}
+	.social {
+		flex-wrap: wrap;
+	}
+	footer {
+		height: 498px;
+	}	 
+}
+@media (min-width: 340px) {
+	.bottomheader {
+		height: 180px;
+	}
+	.topmenu.container, .container {
+		flex-wrap: wrap;
+	}
+	.social {
+		flex-wrap: wrap;
+	}
+	footer {
+		height: 498px;
+	}	 
+}
+
+
+@media (min-width: 440px) {
+	.cat-blocks {
+		gap: 32px;
+	}
+	.catalog {
+		gap: 16px;
+	}
+	.bottomheader {
+		height: 120px;
+	}
+	.topmenu.container {
+		flex-wrap: wrap;
+	}
+	.social {
+		height: 44px;
+	}
+	footer {
+		height: 350px;
+	}
+}
+
 @media (min-width: 576px) {
 	.cat-blocks {
 		gap: 32px;
@@ -533,9 +589,22 @@ aside {
 	.catalog {
 		gap: 16px;
 	}
+	.bottomheader {
+		height: 120px;
+	}
+	.topmenu.container {
+		flex-wrap: wrap;
+	}
+	.social {
+		height: 44px;
+	}
+	footer {
+		height: 350px;
+	}
+	
 }
 
-@media (min-width: 768px) {
+@media (min-width: 703px) {
 	.cat-blocks {
 		gap: 4px;
 	}
@@ -543,6 +612,41 @@ aside {
 		display: block;
 		width: 160px;
 	}
+	.container {
+		margin: 0;
+	}
+	.bottomheader {
+		height: 120px;
+	}
+	footer {
+		height: 350px;
+	}
+}
+
+
+@media (min-width: 785px) {
+	.cat-blocks {
+		gap: 4px;
+	}
+	aside {
+		display: block;
+		width: 160px;
+	}
+	.container {
+		margin: 0;
+	}
+	.bottomheader {
+		height: 78px;
+	}
+	footer {
+		height: 180px;
+	}
+	
+}
+@media (min-width: 800px) {
+	.container {
+		margin: 0 auto;
+	}	
 }
 
 @media (min-width: 992px) {
@@ -552,16 +656,28 @@ aside {
 	aside {
 		width: 260px;
 	}
+	.container {
+		margin: 0 auto;
+	}
+	.bottomheader {
+		height: 78px;
+	}
 }
 
 @media (min-width: 1200px) {
 	.cat-blocks {
 		gap: 22px;
 	}
+	.bottomheader {
+		height: 78px;
+	}
 }
 
 @media (min-width: 1400px) {
 	.cat-blocks {
 		gap: 14px;
+	}
+	.bottomheader {
+		height: 78px;
 	}
 }
